@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                      'header header header header'
+                      'section section section aside'
+                      'footer footer footer footer';
+    margin: 0;
+    grid-template-rows: 25vh 500px 20vh 30vh ;
+    grid-template-columns: 10vw 15vw 60vw 15vw ;
+}
+body::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space*/
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+@font-face {
+    font-family: 'diploma';
+    src: url('./font/diploma.ttf');
+    src: url('diploma?#iefix') format('embedded-opentype'),
+      url('diploma.svg#Locaweb-Icons') format('svg'),
+      url('diploma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+a {
+    color: white;
+    font-size: 22pt;
+    text-decoration: none;
+    font-family:  
+}
+nav {
+    grid-area: navbar;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    grid-area: header;
+    background-image: url(./images/vingadores_ultimato_1366x768.jpg);
+}
+section {
+    grid-area: section;
+    background-color: blue;
+}
+aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+footer {
+    grid-area: footer;
+    background-color: purple;
+}
